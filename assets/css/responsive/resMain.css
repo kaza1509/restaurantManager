@@ -1,0 +1,63 @@
+@media screen and (max-width: 1150px) {
+    header .bar {
+        font-size: 30px;
+    }
+
+    #sidebar {
+        width: 100px;
+        overflow: none;
+    }
+
+    #sidebar ul li img {
+        width: 30px;
+    }
+
+    #sidebar ul li {
+        padding: 10px;
+    }
+
+    #sidebar ul li a {
+        display: block;
+        text-align: center;
+    }
+
+    #sidebar ul li span {
+        display: none;
+    }
+
+    #content {
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .header__search input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        /* position: static; */
+    }
+
+    header .header__logo{
+        display: none;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        margin-left: 0px;
+        position: relative;
+    }
+
+    header .bar {
+        display: block;
+    }
+
+    header .header__search {
+        display: none;
+    } 
+}

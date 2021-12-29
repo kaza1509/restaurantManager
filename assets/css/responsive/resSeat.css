@@ -1,0 +1,141 @@
+@media screen and (max-width: 1150px) {
+    #table-count {
+        left: 130px;
+        width: auto;
+        height: auto;
+    }
+
+    .count {
+        font-size: 16px;
+    }
+
+    #table-add {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #table-count {
+        left: 20px;
+    }
+
+    #table-box {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #table-add {
+        padding: 20px 25px;
+        font-size: 25px;
+        border-radius: 55px;
+        bottom: 40px;
+    }
+
+    /* table box */
+    #table-box {
+        padding-top: 40px;
+        /* display: block; */
+        border-radius: 0px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0;
+
+        transform: translate(0,0);
+
+        width: 320px;
+        max-width: 100%;
+        height: auto;
+
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    #table-box .table-box__left {
+        border: none;
+        width: 100%;
+    }
+
+    .table-box__right {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .table-box__right li {
+        font-size: 16px;
+    }
+
+    /* table change status button */
+    .table__change-status {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+        transform: translate(0,0);
+        width: 320px;
+        max-width: 100%;
+        height: auto;
+        padding: 40px 20px 20px 20px;
+    }
+
+    .table__change-status h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .change_color > div:first-child {
+        margin-bottom: 0px;
+    }
+
+    .change_color > div {
+        display: block;
+        /* margin-bottom: 0px; */
+    }
+
+    .change_color > div > div {
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 10px 10px;
+    }
+
+    .close-change-status {
+        width: 100%;
+        font-size: 20px;
+        padding: 10px 10px;
+        float: none!important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #table-count {
+        height: auto;
+        width: auto;
+    }
+
+    #table-count > div:nth-child(1) {
+        margin-bottom: 5px;
+    }
+
+    #table-count > div{
+        display: block;
+    }
+
+    #table-count > div > div {
+        margin-bottom: 5px;
+    }
+
+    #table-add {
+        bottom: 53px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #side__bar_mobile {
+        width: 100%;
+    }
+}
