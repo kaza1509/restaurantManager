@@ -133,9 +133,3 @@
         bottom: 53px;
     }
 }
-
-@media screen and (max-width: 450px) {
-    #side__bar_mobile {
-        width: 100%;
-    }
-}
