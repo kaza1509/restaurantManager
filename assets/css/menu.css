@@ -1,0 +1,5 @@
+/* thanh menu có màu */
+.active {
+    background-color: #C3C3C4;
+    background: linear-gradient(180deg, #1326D6, #BDBEC0);
+}

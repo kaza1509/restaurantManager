@@ -16,7 +16,7 @@ let createTable = (color) => {
     </div>`
 }
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 15; i++) {
     let div = document.createElement('div')
     div.className = 'table-item'
 

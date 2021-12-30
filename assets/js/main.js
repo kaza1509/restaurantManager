@@ -34,3 +34,17 @@ check.addEventListener('change', (e) => {
         content.style.backgroundColor = '#282C34'
     }
 })
+
+// đổi màu khi chọn từng mục ở slider
+// let menuElement = document.querySelectorAll('#sidebar ul li')
+// for (let i = 0; i < menuElement.length; i++) { 
+//     menuElement[i].addEventListener('click', (e) => {
+
+//         for (let j = 0; j < menuElement.length; j++) {
+//             menuElement[j].style.backgroundColor = '#AAABB1'
+//         } 
+
+//         menuElement[i].style.backgroundColor = '#3141D6'
+//         e.preventDefault()
+//     })    
+// }
