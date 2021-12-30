@@ -1,27 +1,3 @@
-// slider
-let bar = document.querySelector('.bar')
-let close = document.querySelector('.close')
-let overlay = document.querySelector('#overlay')
-let sidebar = document.querySelector('#side__bar_mobile')
-
-bar.addEventListener('click', (e) => {
-    sidebar.style.transform = 'translateX(0%)'
-    sidebar.style.transition = 'all .5s linear'
-    overlay.style.display = 'block'
-})
-
-close.addEventListener('click', (e) => {
-    sidebar.style.transform = 'translateX(-100%)'
-    sidebar.style.transition = 'all .5s linear'
-    overlay.style.display = 'none'
-})
-
-overlay.addEventListener('click', (e) => {
-    sidebar.style.transform = 'translateX(-100%)'
-    sidebar.style.transition = 'all .5s linear'
-    overlay.style.display = 'none'
-})
-
 //------------------ Tạo ra bàn ----------------------
 let table = document.getElementsByClassName('table')[0]
 let createTable = (color) => {
@@ -40,7 +16,7 @@ let createTable = (color) => {
     </div>`
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 6; i++) {
     let div = document.createElement('div')
     div.className = 'table-item'
 
@@ -163,6 +139,7 @@ function onOfTableBox() {
 
             //change number table
             document.querySelector('.table__change-status h1').innerHTML = `Change status for table ${index+1}`
+
             
         })
         // đóng box
@@ -177,7 +154,23 @@ function onOfTableBox() {
     }
 }
 
-//------------------ footer ---------
+
+// delete 
+let dele = document.getElementsByClassName('delete')[0]
+let deleteTable = () => {
+    dele.addEventListener('click', () => {
+        tableBox.style.display = 'none'
+        isOpen = false
+    
+        tableItem[index].parentElement.removeChild(tableItem[index])
+    
+        onOfTableBox()
+        countTable()
+    })
+}
+deleteTable()
+
+//------------------ footer --------------
 
 //count table
 let countTable = () => {
@@ -259,7 +252,6 @@ createN.addEventListener('click', () => {
     popUpCreate.style.display = 'none'
 })
 
-console.log(tableItem.length);
 createY.addEventListener('click', () => {
     popUpCreate.style.display = 'none'
     
@@ -291,15 +283,3 @@ function manager() {
 
 manager()
 
-let check = document.querySelector('.checkbox')
-let content1 = document.querySelector('#content')
-
-
-check.addEventListener('change', (e) => {
-    if(e.target.checked != true) {
-        content.style.backgroundColor = '#fff'
-    }
-    else {
-        content.style.backgroundColor = '#282C34'
-    }
-})
